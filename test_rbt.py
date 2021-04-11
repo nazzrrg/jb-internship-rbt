@@ -110,7 +110,7 @@ def test_insert_root():
     assert key == 2 and value == 2
 
 
-def test_insert_left_of_root():
+def test_insert_to_the_left():
     tree = Rbt()
     tree.insert(2, 2)
     tree.insert(1, 1)
@@ -120,7 +120,7 @@ def test_insert_left_of_root():
     assert key == 1 and value == 1
 
 
-def test_insert_right_of_root():
+def test_insert_to_the_right():
     tree = Rbt()
     tree.insert(2, 2)
     tree.insert(3, 3)
@@ -130,7 +130,7 @@ def test_insert_right_of_root():
     assert key == 3 and value == 3
 
 
-def test_insert_substitute_existing():
+def test_insert_value_with_existing_key_substitute():
     tree = Rbt()
     tree.insert(2, 2)
     tree.insert(2, 3)
